@@ -27,7 +27,7 @@ module.exports = {
       repo: "https://github.com/razzkumar/pm2-test.git",
       path: "/var/www/http/pm2-test",
       "post-deploy":
-        "export PATH=$PATH:/home/razz/.nvm/versions/node/v10.15.0/bin/ install && pm2 reload ecosystem.config.js --env production"
+        "export PATH=$PATH:/home/razz/.nvm/versions/node/v10.15.0/bin/ && npm install && pm2 reload ecosystem.config.js --env production"
     }
   }
 };
