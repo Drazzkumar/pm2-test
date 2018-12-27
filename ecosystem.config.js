@@ -22,8 +22,8 @@ module.exports = {
       user : 'razz',
       host : '192.168.88.12',
       ref  : 'origin/master',
-      repo : 'git@github.com:repo.git',
-      path : '/var/www/production',
+      repo : 'https://github.com/razzkumar/pm2-test.git',
+      path : '/var/www/html/pm2-test',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
     }
   }
